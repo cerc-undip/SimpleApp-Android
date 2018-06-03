@@ -13,9 +13,9 @@
 		$sql = "UPDATE vizyan SET nama = '$name', merk = '$merk', model = '$model', year = '$year' WHERE id = $id;";
 		
 		if(mysqli_query($con, $sql)){
-			echo 'Berhasil Update Data Mobil';
+			echo json_encode(array('result'=>'Berhasil Mengubah Mobil'));
 		}else{
-			echo 'Gagal Update Data Mobil';
+            echo json_encode(array('result'=>'Gagal Mengubah Mobil'));
 		}
 		
 		mysqli_close($con);

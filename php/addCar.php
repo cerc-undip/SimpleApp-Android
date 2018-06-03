@@ -12,9 +12,9 @@
         $sql = "INSERT INTO vizyan (nama, merk, model, year) VALUES ('$name', '$merk', '$model', '$year')";
 			
 		if(mysqli_query($con, $sql)){
-			echo 'Berhasil Menambah Mobil';
+            echo json_encode(array('result'=>'Berhasil Menambah Mobil'));
 		}else{
-			echo 'Gagal Menambahkan Mobil';
+            echo json_encode(array('result'=>'Gagal Menambah Mobil'));
 		}
 		
 		mysqli_close($con);
