@@ -1,4 +1,4 @@
-## Latihan Android
+# Latihan Android
 
 > Berikut contoh aplikasi android yang memanfaatkan Library [Retrofit](https://square.github.io/retrofit "Retrofit") untuk mengolah (consume) API. 
 
